@@ -152,11 +152,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="EventRegistrationForm.cs">
+    <Compile Include="ManageEventForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="EventRegistrationForm.Designer.cs">
-      <DependentUpon>EventRegistrationForm.cs</DependentUpon>
+      <DependentUpon>ManageEventForm.cs</DependentUpon>
     </Compile>
     <Compile Include="HistoryMonitorForm.cs">
       <SubType>Form</SubType>
@@ -164,11 +164,11 @@
     <Compile Include="HistoryMonitorForm.Designer.cs">
       <DependentUpon>HistoryMonitorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="LiveAttendanceForm.cs">
+    <Compile Include="ManageStudentAttendanceForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LiveAttendanceForm.Designer.cs">
-      <DependentUpon>LiveAttendanceForm.cs</DependentUpon>
+    <Compile Include="ManageStudentAttendanceForm.Designer.cs">
+      <DependentUpon>ManageStudentAttendanceForm.cs</DependentUpon>
     </Compile>
     <Compile Include="MainMenuForm.cs">
       <SubType>Form</SubType>
@@ -179,13 +179,13 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="EventRegistrationForm.resx">
-      <DependentUpon>EventRegistrationForm.cs</DependentUpon>
+      <DependentUpon>ManageEventForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="HistoryMonitorForm.resx">
       <DependentUpon>HistoryMonitorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LiveAttendanceForm.resx">
-      <DependentUpon>LiveAttendanceForm.cs</DependentUpon>
+    <EmbeddedResource Include="ManageStudentAttendanceForm.resx">
+      <DependentUpon>ManageStudentAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="MainMenuForm.resx">
       <DependentUpon>MainMenuForm.cs</DependentUpon>

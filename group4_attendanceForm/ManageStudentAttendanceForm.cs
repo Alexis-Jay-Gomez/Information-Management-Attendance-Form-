@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace group4_attendanceForm
 {
-    public partial class LiveAttendanceForm : Form
+    public partial class ManageStudentAttendanceForm : Form
     {
-        public LiveAttendanceForm()
+        public ManageStudentAttendanceForm()
         {
             InitializeComponent();
         }

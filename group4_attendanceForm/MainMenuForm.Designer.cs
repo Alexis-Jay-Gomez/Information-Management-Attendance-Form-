@@ -70,7 +70,7 @@
             this.btnManageStudents.Name = "btnManageStudents";
             this.btnManageStudents.Size = new System.Drawing.Size(600, 85);
             this.btnManageStudents.TabIndex = 3;
-            this.btnManageStudents.Text = "Manage Student and Registration";
+            this.btnManageStudents.Text = "Manage Student Attendance";
             this.btnManageStudents.UseVisualStyleBackColor = true;
             this.btnManageStudents.Click += new System.EventHandler(this.btnManageStudents_Click);
             // 
@@ -90,7 +90,7 @@
             this.btnAttendanceMonitor.Name = "btnAttendanceMonitor";
             this.btnAttendanceMonitor.Size = new System.Drawing.Size(600, 85);
             this.btnAttendanceMonitor.TabIndex = 5;
-            this.btnAttendanceMonitor.Text = "Previous Attendance Monitor";
+            this.btnAttendanceMonitor.Text = "History Monitor";
             this.btnAttendanceMonitor.UseVisualStyleBackColor = true;
             this.btnAttendanceMonitor.Click += new System.EventHandler(this.btnAttendanceMonitor_Click);
             // 

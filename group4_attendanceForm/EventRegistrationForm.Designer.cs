@@ -1,6 +1,6 @@
 ﻿namespace group4_attendanceForm
 {
-    partial class EventRegistrationForm
+    partial class ManageEventForm
     {
         /// <summary>
         /// Required designer variable.

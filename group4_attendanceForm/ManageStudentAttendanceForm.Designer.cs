@@ -1,6 +1,6 @@
 ﻿namespace group4_attendanceForm
 {
-    partial class LiveAttendanceForm
+    partial class ManageStudentAttendanceForm
     {
         /// <summary>
         /// Required designer variable.

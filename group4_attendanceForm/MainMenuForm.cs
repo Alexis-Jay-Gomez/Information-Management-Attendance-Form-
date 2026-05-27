@@ -24,7 +24,7 @@ namespace group4_attendanceForm
 
         private void btnManageStudents_Click(object sender, EventArgs e)
         {
-            LiveAttendanceForm liveAttendance = new LiveAttendanceForm();
+            ManageStudentAttendanceForm liveAttendance = new ManageStudentAttendanceForm();
             this.Hide();
             liveAttendance.ShowDialog();
             this.Show();
@@ -32,7 +32,7 @@ namespace group4_attendanceForm
 
         private void btnEventRegistration_Click(object sender, EventArgs e)
         {
-            EventRegistrationForm eventReg = new EventRegistrationForm();
+            ManageEventForm eventReg = new ManageEventForm();
             this.Hide();
             eventReg.ShowDialog();
             this.Show();
