@@ -32,6 +32,16 @@ namespace group4_attendanceForm
         {
             this.Close();
         }
+
+        private void dgvAssignedCourse_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }

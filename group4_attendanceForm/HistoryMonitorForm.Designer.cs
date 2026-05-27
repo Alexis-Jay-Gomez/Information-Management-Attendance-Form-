@@ -88,9 +88,9 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(601, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(103, 16);
+            this.label4.Size = new System.Drawing.Size(140, 20);
             this.label4.TabIndex = 5;
-            this.label4.Text = "Filter by Course:";
+            this.label4.Text = "Filter by Program:";
             // 
             // btnResetFilter
             // 
@@ -117,7 +117,7 @@
             this.btnReturnToMenu.Name = "btnReturnToMenu";
             this.btnReturnToMenu.Size = new System.Drawing.Size(135, 41);
             this.btnReturnToMenu.TabIndex = 9;
-            this.btnReturnToMenu.Text = "Back to Main Menu";
+            this.btnReturnToMenu.Text = "Main Menu";
             this.btnReturnToMenu.UseVisualStyleBackColor = true;
             this.btnReturnToMenu.Click += new System.EventHandler(this.btnReturnToMenu_Click);
             // 

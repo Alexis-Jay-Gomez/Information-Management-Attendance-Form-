@@ -16,5 +16,10 @@ namespace group4_attendanceForm
         {
             InitializeComponent();
         }
+
+        private void btnMainMenu_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

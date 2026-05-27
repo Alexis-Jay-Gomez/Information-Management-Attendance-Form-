@@ -80,7 +80,7 @@
             this.btnEventRegistration.Name = "btnEventRegistration";
             this.btnEventRegistration.Size = new System.Drawing.Size(600, 85);
             this.btnEventRegistration.TabIndex = 4;
-            this.btnEventRegistration.Text = "Manage Event Registration";
+            this.btnEventRegistration.Text = "Manage Event";
             this.btnEventRegistration.UseVisualStyleBackColor = true;
             this.btnEventRegistration.Click += new System.EventHandler(this.btnEventRegistration_Click);
             // 
