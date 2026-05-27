@@ -117,9 +117,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(217, 62);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(25, 20);
+            this.label5.Size = new System.Drawing.Size(86, 20);
             this.label5.TabIndex = 27;
-            this.label5.Text = "ID";
+            this.label5.Text = "Adviser ID";
             // 
             // txtAssignAdviser
             // 
@@ -140,7 +140,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(217, 118);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(45, 20);
+            this.label6.Size = new System.Drawing.Size(36, 16);
             this.label6.TabIndex = 30;
             this.label6.Text = "Date";
             // 
