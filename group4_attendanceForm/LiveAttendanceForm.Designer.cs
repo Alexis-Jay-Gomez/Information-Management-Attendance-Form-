@@ -44,11 +44,11 @@
             this.rdoAttended = new System.Windows.Forms.RadioButton();
             this.rdoSkipped = new System.Windows.Forms.RadioButton();
             this.btnSubmitAttendance = new System.Windows.Forms.Button();
-            this.dgvAttendanceRecords = new System.Windows.Forms.DataGridView();
+            this.dgvRecentSubmits = new System.Windows.Forms.DataGridView();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClearLogs = new System.Windows.Forms.Button();
             this.btnMainMenu = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAttendanceRecords)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSubmits)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -200,15 +200,15 @@
             this.btnSubmitAttendance.Text = "SUBMIT ATTENDANCE";
             this.btnSubmitAttendance.UseVisualStyleBackColor = true;
             // 
-            // dgvAttendanceRecords
+            // dgvRecentSubmits
             // 
-            this.dgvAttendanceRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvAttendanceRecords.Location = new System.Drawing.Point(588, 117);
-            this.dgvAttendanceRecords.Name = "dgvAttendanceRecords";
-            this.dgvAttendanceRecords.RowHeadersWidth = 51;
-            this.dgvAttendanceRecords.RowTemplate.Height = 24;
-            this.dgvAttendanceRecords.Size = new System.Drawing.Size(662, 379);
-            this.dgvAttendanceRecords.TabIndex = 20;
+            this.dgvRecentSubmits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvRecentSubmits.Location = new System.Drawing.Point(588, 117);
+            this.dgvRecentSubmits.Name = "dgvRecentSubmits";
+            this.dgvRecentSubmits.RowHeadersWidth = 51;
+            this.dgvRecentSubmits.RowTemplate.Height = 24;
+            this.dgvRecentSubmits.Size = new System.Drawing.Size(662, 379);
+            this.dgvRecentSubmits.TabIndex = 20;
             // 
             // btnRefresh
             // 
@@ -246,7 +246,7 @@
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnClearLogs);
             this.Controls.Add(this.btnRefresh);
-            this.Controls.Add(this.dgvAttendanceRecords);
+            this.Controls.Add(this.dgvRecentSubmits);
             this.Controls.Add(this.btnSubmitAttendance);
             this.Controls.Add(this.rdoSkipped);
             this.Controls.Add(this.rdoAttended);
@@ -268,7 +268,7 @@
             this.Name = "LiveAttendanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LiveAttendanceForm";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvAttendanceRecords)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSubmits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -292,7 +292,7 @@
         private System.Windows.Forms.RadioButton rdoAttended;
         private System.Windows.Forms.RadioButton rdoSkipped;
         private System.Windows.Forms.Button btnSubmitAttendance;
-        private System.Windows.Forms.DataGridView dgvAttendanceRecords;
+        private System.Windows.Forms.DataGridView dgvRecentSubmits;
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClearLogs;
         private System.Windows.Forms.Button btnMainMenu;
