@@ -152,6 +152,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DataBaseConfig.cs" />
     <Compile Include="ManageEventForm.cs">
       <SubType>Form</SubType>
     </Compile>
