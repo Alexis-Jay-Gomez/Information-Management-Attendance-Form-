@@ -238,7 +238,7 @@
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
             // 
-            // LiveAttendanceForm
+            // ManageStudentAttendanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -265,9 +265,10 @@
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
-            this.Name = "LiveAttendanceForm";
+            this.Name = "ManageStudentAttendanceForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LiveAttendanceForm";
+            this.Load += new System.EventHandler(this.ManageStudentAttendanceForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSubmits)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

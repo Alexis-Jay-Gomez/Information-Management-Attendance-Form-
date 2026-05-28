@@ -21,5 +21,10 @@ namespace group4_attendanceForm
         {
             this.Close();
         }
+
+        private void HistoryMonitorForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

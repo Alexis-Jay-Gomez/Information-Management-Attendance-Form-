@@ -159,6 +159,7 @@
             this.Name = "HistoryMonitorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "HistoryMonitorForm";
+            this.Load += new System.EventHandler(this.HistoryMonitorForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistoryRecords)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

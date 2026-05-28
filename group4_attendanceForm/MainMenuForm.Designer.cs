@@ -120,6 +120,7 @@
             this.Name = "MainMenuForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Attendance And Management System v1.0";
+            this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.Resize += new System.EventHandler(this.MainMenuForm_Resize);
             this.ResumeLayout(false);
             this.PerformLayout();

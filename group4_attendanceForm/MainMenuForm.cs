@@ -50,5 +50,10 @@ namespace group4_attendanceForm
         {
             Application.Exit();
         }
+
+        private void MainMenuForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

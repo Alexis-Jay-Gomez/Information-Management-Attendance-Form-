@@ -17,18 +17,7 @@ namespace group4_attendanceForm
             InitializeComponent();
         }
 
-        private void label3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox2_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        
-            private void btnBackMainMenu_Click(object sender, EventArgs e)
+        private void btnBackMainMenu_Click(object sender, EventArgs e)
         {
             this.Close();
         }
@@ -38,15 +27,30 @@ namespace group4_attendanceForm
 
         }
 
-        private void label3_Click_1(object sender, EventArgs e)
-        {
 
-        }
 
         private void ManageEventForm_Load(object sender, EventArgs e)
         {
 
         }
+
+        #region Accidentally na click
+        private void label3_Click_1(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        #endregion
     }
-    
+
 }

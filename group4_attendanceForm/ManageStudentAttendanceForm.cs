@@ -21,5 +21,10 @@ namespace group4_attendanceForm
         {
             this.Close();
         }
+
+        private void ManageStudentAttendanceForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
