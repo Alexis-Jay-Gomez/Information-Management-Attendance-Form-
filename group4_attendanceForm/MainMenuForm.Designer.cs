@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.labelTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnManageStudents = new System.Windows.Forms.Button();
             this.btnEventRegistration = new System.Windows.Forms.Button();
@@ -45,15 +45,15 @@
             this.label1.Size = new System.Drawing.Size(0, 16);
             this.label1.TabIndex = 0;
             // 
-            // label2
+            // labelTitle
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(338, 61);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(538, 31);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "STUDENT ATTENDANCE MANAGEMENT";
+            this.labelTitle.AutoSize = true;
+            this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTitle.Location = new System.Drawing.Point(341, 61);
+            this.labelTitle.Name = "labelTitle";
+            this.labelTitle.Size = new System.Drawing.Size(538, 31);
+            this.labelTitle.TabIndex = 1;
+            this.labelTitle.Text = "STUDENT ATTENDANCE MANAGEMENT";
             // 
             // label3
             // 
@@ -108,13 +108,13 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1009, 538);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAttendanceMonitor);
             this.Controls.Add(this.btnEventRegistration);
             this.Controls.Add(this.btnManageStudents);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
+            this.Controls.Add(this.labelTitle);
             this.Controls.Add(this.label1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Name = "MainMenuForm";
@@ -130,7 +130,7 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label labelTitle;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Button btnManageStudents;
         private System.Windows.Forms.Button btnEventRegistration;

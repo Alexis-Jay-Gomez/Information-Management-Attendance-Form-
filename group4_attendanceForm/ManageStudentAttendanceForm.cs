@@ -22,6 +22,7 @@ namespace group4_attendanceForm
         {
             PopulateDropdowns();
             RefreshAttendanceGrid();
+            StyleAllGrids();
         }
 
         private void PopulateDropdowns()
@@ -78,7 +79,7 @@ namespace group4_attendanceForm
                 using (SqlConnection conn = DatabaseConfig.GetConnection())
                 {
                     conn.Open();
-                    
+
                     string query = @"
                         SELECT 
                             al.LogID AS [Log ID], 
@@ -103,7 +104,7 @@ namespace group4_attendanceForm
                     dgvRecentSubmits.DataSource = dt;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 Console.WriteLine("Logs table view initialization: " + ex.Message);
             }
@@ -117,12 +118,12 @@ namespace group4_attendanceForm
         private void btnSubmitAttendance_Click(object sender, EventArgs e)
         {
             if (
-                string.IsNullOrWhiteSpace(txtStudentId.Text)||
-                string.IsNullOrWhiteSpace(txtLastName.Text)||
-                string.IsNullOrWhiteSpace(txtFirstName.Text)||
-                cmbCourse.SelectedIndex == -1||
-                cmbEvent.SelectedIndex == -1||
-                cmbSection.SelectedIndex == -1||
+                string.IsNullOrWhiteSpace(txtStudentId.Text) ||
+                string.IsNullOrWhiteSpace(txtLastName.Text) ||
+                string.IsNullOrWhiteSpace(txtFirstName.Text) ||
+                cmbCourse.SelectedIndex == -1 ||
+                cmbEvent.SelectedIndex == -1 ||
+                cmbSection.SelectedIndex == -1 ||
                 cmbTeacher.SelectedIndex == -1
                 )
             {
@@ -179,9 +180,53 @@ namespace group4_attendanceForm
                 txtLastName.Clear();
                 txtFirstName.Clear();
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Failed to save attendance record" + ex.Message, "Database error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void StyleAllGrids()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is DataGridView dgv)
+                {
+                    // 1. Structural Polish
+                    dgv.BackgroundColor = Color.White;       // Gets rid of the heavy ugly gray base
+                    dgv.RowHeadersVisible = false;           // Removes the empty far-left margin column
+                    dgv.AllowUserToAddRows = false;          // Hides the blank input row at the bottom
+                    dgv.BorderStyle = BorderStyle.None;
+
+                    // 2. Proportional Scaling
+                    dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Stretches columns to fill available layout width
+
+                    // 3. Grid Lines & Focus Configurations
+                    dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                    dgv.GridColor = Color.FromArgb(240, 240, 240); // Soft separation lines
+                    dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Full row highlights on row selection click
+                    dgv.MultiSelect = false;
+
+                    // 4. Custom Header Theme — Midnight Blue Configuration
+                    dgv.EnableHeadersVisualStyles = false;
+                    dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+                    dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(25, 25, 112); // Midnight Blue
+                    dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;                 // High-contrast clean white text
+                    dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+                    dgv.ColumnHeadersHeight = 35; // Generous height padding for an executive dashboard look
+
+                    // 5. Data Cell Font Configurations
+                    dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+                    dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(225, 230, 245); // Matching light midnight accent on click
+                    dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(25, 25, 112);   // Dark navy blue text highlight
+
+                    // 6. Target Primary Key Hider 
+                    // Safely drops the Log ID column visually while keeping it fully interactive in background logic
+                    if (dgv.Columns.Contains("Log ID"))
+                    {
+                        dgv.Columns["Log ID"].Visible = false;
+                    }
+                }
             }
         }
     }

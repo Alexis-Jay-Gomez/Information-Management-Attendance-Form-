@@ -26,7 +26,59 @@ namespace group4_attendanceForm
         private void ManageEventForm_Load(object sender, EventArgs e)
         {
             RefreshAllGrids();
+            StyleAllGrids();
+        }
 
+        private void StyleAllGrids()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is DataGridView dgv)
+                {
+                    // 1. Core Layout & Removing Clutter
+                    dgv.BackgroundColor = Color.White;       // Wipes out the large gray background space
+                    dgv.RowHeadersVisible = false;           // Removes the empty selection column on the far left
+                    dgv.AllowUserToAddRows = false;          // Removes the blank bottom row with the asterisk (*)
+                    dgv.BorderStyle = BorderStyle.None;
+
+                    // 2. Column Autofit
+                    dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Stretches columns to fill the full width
+
+                    // 3. Grid Lines & Cell Styles
+                    dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal; // Clean modern divider lines
+                    dgv.GridColor = Color.FromArgb(240, 240, 240); // Ultra-soft gray lines
+                    dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Selecting an item highlights the whole row cleanly
+                    dgv.MultiSelect = false;
+
+                    // 4. Clean Header Styling — 🌌 NOW MIDNIGHT BLUE THEMED
+                    dgv.EnableHeadersVisualStyles = false; // Tells Windows to allow our custom header color
+                    dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+                    dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(25, 25, 112); // Midnight Blue
+                    dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;                 // High-contrast white text
+                    dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+                    dgv.ColumnHeadersHeight = 35; // Slightly taller header for a premium dashboard feel
+
+                    // 5. Row Font & Selection Matching
+                    dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+                    dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(225, 230, 245); // Complementary light midnight accent when clicked
+                    dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(25, 25, 112);   // Dark text on selection link
+
+                    // ===================================================================
+                    // 🎯 6. GLOBAL ID HIDER FOR ALL TABLES
+                    // ===================================================================
+                    // Hides the "ID" column for Event, Program, and Section tables
+                    if (dgv.Columns.Contains("ID"))
+                    {
+                        dgv.Columns["ID"].Visible = false;
+                    }
+
+                    // Hides the "Adviser ID" column for the Adviser table
+                    if (dgv.Columns.Contains("Adviser ID"))
+                    {
+                        dgv.Columns["Adviser ID"].Visible = false;
+                    }
+                }
+            }
         }
 
         private void RefreshAllGrids()

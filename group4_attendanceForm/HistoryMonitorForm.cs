@@ -72,6 +72,9 @@ namespace group4_attendanceForm
 
         private void LoadHistoryData(string selectedEvent, string selectedSection)
         {
+
+            StyleAllGrids();
+            
             string query = @"
             SELECT 
                 l.LogID AS [Log ID],
@@ -122,7 +125,12 @@ namespace group4_attendanceForm
 
                         dgvHistoryRecords.DataSource = dt;
 
-                        lblParticipated.Text = $"Participated: {dt.Rows.Count:D2}";
+                        
+                        int presentCount = dt.AsEnumerable().Count(row => row.Field<string>("Status") == "Present");
+
+                        lblParticipated.Text = $"Participated: {presentCount:D2}";
+
+                  
                     }
                 }
             }
@@ -135,6 +143,50 @@ namespace group4_attendanceForm
         private void btnSearch_Click(object sender, EventArgs e)
         {
             LoadHistoryData(cmbSelectEvent.SelectedItem.ToString(), cmbSelectSection.SelectedItem.ToString());
+        }
+
+        private void StyleAllGrids()
+        {
+            foreach (Control c in this.Controls)
+            {
+                if (c is DataGridView dgv)
+                {
+                    // 1. Structural Polish
+                    dgv.BackgroundColor = Color.White;       // Gets rid of the heavy gray base space
+                    dgv.RowHeadersVisible = false;           // Removes the empty margin column on the far left
+                    dgv.AllowUserToAddRows = false;          // Hides the blank manual entry row at the bottom
+                    dgv.BorderStyle = BorderStyle.None;
+
+                    // 2. Proportional Scaling
+                    dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Perfect edge-to-edge layout
+
+                    // 3. Grid Lines & Focus Configurations
+                    dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+                    dgv.GridColor = Color.FromArgb(240, 240, 240); // Soft clean row split lines
+                    dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Highlighting focuses the whole row at once
+                    dgv.MultiSelect = false;
+
+                    // 4. Custom Header Theme — Midnight Blue Configuration
+                    dgv.EnableHeadersVisualStyles = false;
+                    dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+                    dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(25, 25, 112); // Midnight Blue
+                    dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;                 // Clean white readable text
+                    dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+                    dgv.ColumnHeadersHeight = 35; // Adds professional spacing padding around headers
+
+                    // 5. Data Cell Font Configurations
+                    dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+                    dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(225, 230, 245); // Light navy highlight tint on item click
+                    dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(25, 25, 112);   // Dark text contrast matching the header
+
+                    // 6. Target Primary Key Hider 
+                    // Automatically locates the database identifier and drops it from the user layout view
+                    if (dgv.Columns.Contains("Log ID"))
+                    {
+                        dgv.Columns["Log ID"].Visible = false;
+                    }
+                }
+            }
         }
     }
 }
