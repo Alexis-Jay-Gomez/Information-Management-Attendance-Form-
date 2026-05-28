@@ -174,3 +174,4 @@ C:\Users\foste\OneDrive\Documents\GitHub\Information-Management-Attendance-Form-
 C:\Users\foste\OneDrive\Documents\GitHub\Information-Management-Attendance-Form-\group4_attendanceForm\obj\Debug\group4_attendanceForm.exe
 C:\Users\foste\OneDrive\Documents\GitHub\Information-Management-Attendance-Form-\group4_attendanceForm\obj\Debug\group4_attendanceForm.pdb
 C:\Users\foste\OneDrive\Documents\GitHub\Information-Management-Attendance-Form-\group4_attendanceForm\obj\Debug\group4_attendanceForm.exe.config
+C:\Users\foste\OneDrive\Documents\GitHub\Information-Management-Attendance-Form-\group4_attendanceForm\obj\Debug\group4_attendanceForm.LoginForm.resources

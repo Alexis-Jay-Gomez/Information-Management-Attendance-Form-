@@ -23,6 +23,10 @@ namespace group4_attendanceForm
             PopulateDropdowns();
             RefreshAttendanceGrid();
             StyleAllGrids();
+
+            this.BeginInvoke(new Action(() => {
+                dgvRecentSubmits.ClearSelection();
+            }));
         }
 
         private void PopulateDropdowns()
@@ -33,7 +37,6 @@ namespace group4_attendanceForm
                 {
                     conn.Open();
 
-                    //Programs Dropdown
                     SqlCommand cmdProg = new SqlCommand("SELECT ProgramName FROM PROGRAMS", conn);
                     using (SqlDataReader drProg = cmdProg.ExecuteReader())
                     {
@@ -41,7 +44,6 @@ namespace group4_attendanceForm
                         while (drProg.Read()) cmbCourse.Items.Add(drProg["ProgramName"].ToString());
                     }
 
-                    //Section Drop
                     SqlCommand cmdSec = new SqlCommand("SELECT SectionName FROM SECTIONS", conn);
                     using (SqlDataReader drSec = cmdSec.ExecuteReader())
                     {
@@ -49,7 +51,6 @@ namespace group4_attendanceForm
                         while (drSec.Read()) cmbSection.Items.Add(drSec["SectionName"].ToString());
                     }
 
-                    //Evets drop
                     SqlCommand cmdEvent = new SqlCommand("SELECT EventName FROM EVENTS", conn);
                     using (SqlDataReader drEvent = cmdEvent.ExecuteReader())
                     {
@@ -57,7 +58,6 @@ namespace group4_attendanceForm
                         while (drEvent.Read()) cmbEvent.Items.Add(drEvent["EventName"].ToString());
                     }
 
-                    //Advisers
                     SqlCommand cmdAdv = new SqlCommand("SELECT AdviserName FROM ADVISERS", conn);
                     using (SqlDataReader drAdv = cmdAdv.ExecuteReader())
                     {
@@ -179,6 +179,8 @@ namespace group4_attendanceForm
                 txtStudentId.Clear();
                 txtLastName.Clear();
                 txtFirstName.Clear();
+
+                dgvRecentSubmits.ClearSelection();
             }
             catch (Exception ex)
             {
@@ -188,46 +190,40 @@ namespace group4_attendanceForm
 
         private void StyleAllGrids()
         {
-            foreach (Control c in this.Controls)
+            DataGridView dgv = dgvRecentSubmits;
+
+            dgv.BackgroundColor = Color.White;
+            dgv.RowHeadersVisible = false;
+            dgv.AllowUserToAddRows = false;
+            dgv.BorderStyle = BorderStyle.None;
+
+            dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
+
+            dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
+            dgv.GridColor = Color.FromArgb(240, 240, 240);
+            dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect;
+            dgv.MultiSelect = false;
+
+            dgv.EnableHeadersVisualStyles = false;
+            dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(25, 25, 112);
+            dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;
+            dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
+            dgv.ColumnHeadersHeight = 35;
+
+            dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
+            dgv.DefaultCellStyle.SelectionBackColor = Color.White;
+            dgv.DefaultCellStyle.SelectionForeColor = Color.Black;
+
+            dgv.RowsDefaultCellStyle.SelectionBackColor = Color.White;
+            dgv.RowsDefaultCellStyle.SelectionForeColor = Color.Black;
+
+            if (dgv.Columns.Contains("Log ID"))
             {
-                if (c is DataGridView dgv)
-                {
-                    // 1. Structural Polish
-                    dgv.BackgroundColor = Color.White;       // Gets rid of the heavy ugly gray base
-                    dgv.RowHeadersVisible = false;           // Removes the empty far-left margin column
-                    dgv.AllowUserToAddRows = false;          // Hides the blank input row at the bottom
-                    dgv.BorderStyle = BorderStyle.None;
-
-                    // 2. Proportional Scaling
-                    dgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill; // Stretches columns to fill available layout width
-
-                    // 3. Grid Lines & Focus Configurations
-                    dgv.CellBorderStyle = DataGridViewCellBorderStyle.SingleHorizontal;
-                    dgv.GridColor = Color.FromArgb(240, 240, 240); // Soft separation lines
-                    dgv.SelectionMode = DataGridViewSelectionMode.FullRowSelect; // Full row highlights on row selection click
-                    dgv.MultiSelect = false;
-
-                    // 4. Custom Header Theme — Midnight Blue Configuration
-                    dgv.EnableHeadersVisualStyles = false;
-                    dgv.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
-                    dgv.ColumnHeadersDefaultCellStyle.BackColor = Color.FromArgb(25, 25, 112); // Midnight Blue
-                    dgv.ColumnHeadersDefaultCellStyle.ForeColor = Color.White;                 // High-contrast clean white text
-                    dgv.ColumnHeadersDefaultCellStyle.Font = new Font("Segoe UI", 9.5f, FontStyle.Bold);
-                    dgv.ColumnHeadersHeight = 35; // Generous height padding for an executive dashboard look
-
-                    // 5. Data Cell Font Configurations
-                    dgv.DefaultCellStyle.Font = new Font("Segoe UI", 9f, FontStyle.Regular);
-                    dgv.DefaultCellStyle.SelectionBackColor = Color.FromArgb(225, 230, 245); // Matching light midnight accent on click
-                    dgv.DefaultCellStyle.SelectionForeColor = Color.FromArgb(25, 25, 112);   // Dark navy blue text highlight
-
-                    // 6. Target Primary Key Hider 
-                    // Safely drops the Log ID column visually while keeping it fully interactive in background logic
-                    if (dgv.Columns.Contains("Log ID"))
-                    {
-                        dgv.Columns["Log ID"].Visible = false;
-                    }
-                }
+                dgv.Columns["Log ID"].Visible = false;
             }
+
+            dgv.ClearSelection();
         }
     }
 }

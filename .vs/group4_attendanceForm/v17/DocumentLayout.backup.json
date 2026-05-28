@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\managestudentattendanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\managestudentattendanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\managestudentattendanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\managestudentattendanceform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -19,13 +23,26 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ManageEventForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs",
-              "RelativeDocumentMoniker": "group4_attendanceForm\\ManageEventForm.cs",
-              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs [Design]",
-              "RelativeToolTip": "group4_attendanceForm\\ManageEventForm.cs [Design]",
+              "Title": "ManageStudentAttendanceForm.cs",
+              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageStudentAttendanceForm.cs",
+              "RelativeDocumentMoniker": "group4_attendanceForm\\ManageStudentAttendanceForm.cs",
+              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageStudentAttendanceForm.cs*",
+              "RelativeToolTip": "group4_attendanceForm\\ManageStudentAttendanceForm.cs*",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwOQAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T16:04:00.997Z",
+              "WhenOpened": "2026-05-28T17:29:33.231Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ManageStudentAttendanceForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageStudentAttendanceForm.cs",
+              "RelativeDocumentMoniker": "group4_attendanceForm\\ManageStudentAttendanceForm.cs",
+              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageStudentAttendanceForm.cs [Design]*",
+              "RelativeToolTip": "group4_attendanceForm\\ManageStudentAttendanceForm.cs [Design]*",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T17:29:31.978Z",
               "EditorCaption": " [Design]"
             }
           ]
