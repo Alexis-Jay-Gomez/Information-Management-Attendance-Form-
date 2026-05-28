@@ -34,7 +34,7 @@
             this.cmbFilterByEvent = new System.Windows.Forms.ComboBox();
             this.cmbFilterByCourse = new System.Windows.Forms.ComboBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.btnResetFilter = new System.Windows.Forms.Button();
+            this.btnSearch = new System.Windows.Forms.Button();
             this.dgvHistoryRecords = new System.Windows.Forms.DataGridView();
             this.btnReturnToMenu = new System.Windows.Forms.Button();
             this.cmbFilterBySection = new System.Windows.Forms.ComboBox();
@@ -88,18 +88,18 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(601, 71);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(140, 20);
+            this.label4.Size = new System.Drawing.Size(112, 16);
             this.label4.TabIndex = 5;
             this.label4.Text = "Filter by Program:";
             // 
-            // btnResetFilter
+            // btnSearch
             // 
-            this.btnResetFilter.Location = new System.Drawing.Point(1109, 86);
-            this.btnResetFilter.Name = "btnResetFilter";
-            this.btnResetFilter.Size = new System.Drawing.Size(92, 31);
-            this.btnResetFilter.TabIndex = 7;
-            this.btnResetFilter.Text = "Reset";
-            this.btnResetFilter.UseVisualStyleBackColor = true;
+            this.btnSearch.Location = new System.Drawing.Point(1109, 483);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(92, 31);
+            this.btnSearch.TabIndex = 7;
+            this.btnSearch.Text = "Search";
+            this.btnSearch.UseVisualStyleBackColor = true;
             // 
             // dgvHistoryRecords
             // 
@@ -147,7 +147,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btnReturnToMenu);
             this.Controls.Add(this.dgvHistoryRecords);
-            this.Controls.Add(this.btnResetFilter);
+            this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cmbFilterByCourse);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.cmbFilterByEvent);
@@ -172,7 +172,7 @@
         private System.Windows.Forms.ComboBox cmbFilterByEvent;
         private System.Windows.Forms.ComboBox cmbFilterByCourse;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Button btnResetFilter;
+        private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvHistoryRecords;
         private System.Windows.Forms.Button btnReturnToMenu;
         private System.Windows.Forms.ComboBox cmbFilterBySection;
