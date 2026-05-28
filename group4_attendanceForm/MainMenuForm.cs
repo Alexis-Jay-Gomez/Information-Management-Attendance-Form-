@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace group4_attendanceForm
 {
@@ -53,7 +54,26 @@ namespace group4_attendanceForm
 
         private void MainMenuForm_Load(object sender, EventArgs e)
         {
+            // Test the database connection immediately upon startup
+            try
+            {
+                using (SqlConnection conn = DatabaseConfig.GetConnection())
+                {
+                    conn.Open(); // Attempt to handshake with SQL Server
 
+                    // If it succeeds, show a brief, reassuring message
+                    MessageBox.Show("Database connection established successfully!",
+                                    "System Status", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
+            catch (Exception ex)
+            {
+                // If it fails, give yourself a detailed diagnostic message
+                MessageBox.Show("Database Connection Failed!\n\n" +
+                                "Please verify your SQL Server instance is running.\n\n" +
+                                "Error Details: " + ex.Message,
+                                "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

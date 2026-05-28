@@ -9,7 +9,7 @@ namespace group4_attendanceForm
 {
     public static class DatabaseConfig
     {
-        // Custom connection string using the exact Server Name from your SSMS screen!
+        
         public static readonly string ConnectionString = @"Server=MSI\SQLEXPRESS02;Database=AttendanceDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
         /// <summary>
@@ -20,3 +20,4 @@ namespace group4_attendanceForm
             return new SqlConnection(ConnectionString);
         }
     }
+}
