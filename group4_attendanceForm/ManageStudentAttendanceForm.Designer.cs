@@ -45,8 +45,6 @@
             this.rdoSkipped = new System.Windows.Forms.RadioButton();
             this.btnSubmitAttendance = new System.Windows.Forms.Button();
             this.dgvRecentSubmits = new System.Windows.Forms.DataGridView();
-            this.btnRefresh = new System.Windows.Forms.Button();
-            this.btnClearLogs = new System.Windows.Forms.Button();
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
@@ -213,24 +211,6 @@
             this.dgvRecentSubmits.Size = new System.Drawing.Size(1237, 284);
             this.dgvRecentSubmits.TabIndex = 20;
             // 
-            // btnRefresh
-            // 
-            this.btnRefresh.Location = new System.Drawing.Point(12, 30);
-            this.btnRefresh.Name = "btnRefresh";
-            this.btnRefresh.Size = new System.Drawing.Size(166, 39);
-            this.btnRefresh.TabIndex = 21;
-            this.btnRefresh.Text = "Refresh";
-            this.btnRefresh.UseVisualStyleBackColor = true;
-            // 
-            // btnClearLogs
-            // 
-            this.btnClearLogs.Location = new System.Drawing.Point(184, 30);
-            this.btnClearLogs.Name = "btnClearLogs";
-            this.btnClearLogs.Size = new System.Drawing.Size(166, 39);
-            this.btnClearLogs.TabIndex = 22;
-            this.btnClearLogs.Text = "Clear Logs";
-            this.btnClearLogs.UseVisualStyleBackColor = true;
-            // 
             // btnMainMenu
             // 
             this.btnMainMenu.Location = new System.Drawing.Point(16, 629);
@@ -266,8 +246,6 @@
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnMainMenu);
-            this.Controls.Add(this.btnClearLogs);
-            this.Controls.Add(this.btnRefresh);
             this.Controls.Add(this.dgvRecentSubmits);
             this.Controls.Add(this.btnSubmitAttendance);
             this.Controls.Add(this.rdoSkipped);
@@ -316,8 +294,6 @@
         private System.Windows.Forms.RadioButton rdoSkipped;
         private System.Windows.Forms.Button btnSubmitAttendance;
         private System.Windows.Forms.DataGridView dgvRecentSubmits;
-        private System.Windows.Forms.Button btnRefresh;
-        private System.Windows.Forms.Button btnClearLogs;
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label label8;

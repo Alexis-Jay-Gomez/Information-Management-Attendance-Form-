@@ -39,8 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.txtAssignAdviser = new System.Windows.Forms.TextBox();
             this.txtAdviserId = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.cmbDate = new System.Windows.Forms.ComboBox();
             this.btnSubmit = new System.Windows.Forms.Button();
             this.dgvAssignedEvent = new System.Windows.Forms.DataGridView();
             this.label7 = new System.Windows.Forms.Label();
@@ -69,7 +67,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(86, 104);
+            this.label1.Location = new System.Drawing.Point(89, 136);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(106, 16);
             this.label1.TabIndex = 20;
@@ -78,7 +76,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(89, 157);
+            this.label2.Location = new System.Drawing.Point(92, 189);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 16);
             this.label2.TabIndex = 21;
@@ -87,7 +85,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(89, 213);
+            this.label3.Location = new System.Drawing.Point(92, 245);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(85, 16);
             this.label3.TabIndex = 22;
@@ -97,7 +95,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(294, 104);
+            this.label4.Location = new System.Drawing.Point(297, 136);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(97, 16);
             this.label4.TabIndex = 23;
@@ -105,21 +103,21 @@
             // 
             // txtAssignProgram
             // 
-            this.txtAssignProgram.Location = new System.Drawing.Point(89, 123);
+            this.txtAssignProgram.Location = new System.Drawing.Point(92, 155);
             this.txtAssignProgram.Name = "txtAssignProgram";
             this.txtAssignProgram.Size = new System.Drawing.Size(179, 22);
             this.txtAssignProgram.TabIndex = 24;
             // 
             // txtAssignSection
             // 
-            this.txtAssignSection.Location = new System.Drawing.Point(89, 176);
+            this.txtAssignSection.Location = new System.Drawing.Point(92, 208);
             this.txtAssignSection.Name = "txtAssignSection";
             this.txtAssignSection.Size = new System.Drawing.Size(179, 22);
             this.txtAssignSection.TabIndex = 25;
             // 
             // txtAssignEvent
             // 
-            this.txtAssignEvent.Location = new System.Drawing.Point(89, 242);
+            this.txtAssignEvent.Location = new System.Drawing.Point(92, 274);
             this.txtAssignEvent.Name = "txtAssignEvent";
             this.txtAssignEvent.Size = new System.Drawing.Size(179, 22);
             this.txtAssignEvent.TabIndex = 26;
@@ -127,7 +125,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(294, 157);
+            this.label5.Location = new System.Drawing.Point(297, 189);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(69, 16);
             this.label5.TabIndex = 27;
@@ -135,40 +133,23 @@
             // 
             // txtAssignAdviser
             // 
-            this.txtAssignAdviser.Location = new System.Drawing.Point(297, 123);
+            this.txtAssignAdviser.Location = new System.Drawing.Point(300, 155);
             this.txtAssignAdviser.Name = "txtAssignAdviser";
             this.txtAssignAdviser.Size = new System.Drawing.Size(179, 22);
             this.txtAssignAdviser.TabIndex = 28;
             // 
             // txtAdviserId
             // 
-            this.txtAdviserId.Location = new System.Drawing.Point(297, 180);
+            this.txtAdviserId.Location = new System.Drawing.Point(300, 212);
             this.txtAdviserId.Name = "txtAdviserId";
             this.txtAdviserId.Size = new System.Drawing.Size(179, 22);
             this.txtAdviserId.TabIndex = 29;
             // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(294, 213);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(36, 16);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "Date";
-            // 
-            // cmbDate
-            // 
-            this.cmbDate.FormattingEnabled = true;
-            this.cmbDate.Location = new System.Drawing.Point(297, 242);
-            this.cmbDate.Name = "cmbDate";
-            this.cmbDate.Size = new System.Drawing.Size(179, 24);
-            this.cmbDate.TabIndex = 31;
-            // 
             // btnSubmit
             // 
-            this.btnSubmit.Location = new System.Drawing.Point(195, 296);
+            this.btnSubmit.Location = new System.Drawing.Point(300, 267);
             this.btnSubmit.Name = "btnSubmit";
-            this.btnSubmit.Size = new System.Drawing.Size(156, 37);
+            this.btnSubmit.Size = new System.Drawing.Size(179, 37);
             this.btnSubmit.TabIndex = 32;
             this.btnSubmit.Text = "Submit";
             this.btnSubmit.UseVisualStyleBackColor = true;
@@ -264,8 +245,6 @@
             this.Controls.Add(this.label7);
             this.Controls.Add(this.dgvAssignedEvent);
             this.Controls.Add(this.btnSubmit);
-            this.Controls.Add(this.cmbDate);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.txtAdviserId);
             this.Controls.Add(this.txtAssignAdviser);
             this.Controls.Add(this.label5);
@@ -304,8 +283,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtAssignAdviser;
         private System.Windows.Forms.TextBox txtAdviserId;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.ComboBox cmbDate;
         private System.Windows.Forms.Button btnSubmit;
         private System.Windows.Forms.DataGridView dgvAssignedEvent;
         private System.Windows.Forms.Label label7;

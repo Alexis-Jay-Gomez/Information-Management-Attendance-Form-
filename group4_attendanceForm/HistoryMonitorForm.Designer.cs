@@ -28,92 +28,57 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label2 = new System.Windows.Forms.Label();
-            this.txtSearchByStudent = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.cmbFilterByEvent = new System.Windows.Forms.ComboBox();
-            this.cmbFilterByCourse = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
+            this.cmbSelectSection = new System.Windows.Forms.ComboBox();
             this.btnSearch = new System.Windows.Forms.Button();
             this.dgvHistoryRecords = new System.Windows.Forms.DataGridView();
             this.btnReturnToMenu = new System.Windows.Forms.Button();
-            this.cmbFilterBySection = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.cmbSelectEvent = new System.Windows.Forms.ComboBox();
+            this.A = new System.Windows.Forms.Label();
+            this.lblParticipated = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvHistoryRecords)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(47, 71);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(101, 16);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "Search Student:";
-            // 
-            // txtSearchByStudent
-            // 
-            this.txtSearchByStudent.Location = new System.Drawing.Point(48, 90);
-            this.txtSearchByStudent.Name = "txtSearchByStudent";
-            this.txtSearchByStudent.Size = new System.Drawing.Size(214, 22);
-            this.txtSearchByStudent.TabIndex = 2;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(326, 71);
+            this.label3.Location = new System.Drawing.Point(279, 35);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 16);
+            this.label3.Size = new System.Drawing.Size(93, 16);
             this.label3.TabIndex = 3;
-            this.label3.Text = "Filter by Event:";
+            this.label3.Text = "Select Section";
             // 
-            // cmbFilterByEvent
+            // cmbSelectSection
             // 
-            this.cmbFilterByEvent.FormattingEnabled = true;
-            this.cmbFilterByEvent.Location = new System.Drawing.Point(329, 90);
-            this.cmbFilterByEvent.Name = "cmbFilterByEvent";
-            this.cmbFilterByEvent.Size = new System.Drawing.Size(214, 24);
-            this.cmbFilterByEvent.TabIndex = 4;
-            // 
-            // cmbFilterByCourse
-            // 
-            this.cmbFilterByCourse.FormattingEnabled = true;
-            this.cmbFilterByCourse.Location = new System.Drawing.Point(604, 90);
-            this.cmbFilterByCourse.Name = "cmbFilterByCourse";
-            this.cmbFilterByCourse.Size = new System.Drawing.Size(214, 24);
-            this.cmbFilterByCourse.TabIndex = 6;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(601, 71);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(112, 16);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Filter by Program:";
+            this.cmbSelectSection.FormattingEnabled = true;
+            this.cmbSelectSection.Location = new System.Drawing.Point(282, 54);
+            this.cmbSelectSection.Name = "cmbSelectSection";
+            this.cmbSelectSection.Size = new System.Drawing.Size(214, 24);
+            this.cmbSelectSection.TabIndex = 4;
             // 
             // btnSearch
             // 
-            this.btnSearch.Location = new System.Drawing.Point(1109, 483);
+            this.btnSearch.Location = new System.Drawing.Point(502, 50);
             this.btnSearch.Name = "btnSearch";
             this.btnSearch.Size = new System.Drawing.Size(92, 31);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.Text = "Search";
             this.btnSearch.UseVisualStyleBackColor = true;
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // dgvHistoryRecords
             // 
             this.dgvHistoryRecords.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvHistoryRecords.Location = new System.Drawing.Point(48, 141);
+            this.dgvHistoryRecords.Location = new System.Drawing.Point(49, 84);
             this.dgvHistoryRecords.Name = "dgvHistoryRecords";
             this.dgvHistoryRecords.RowHeadersWidth = 51;
             this.dgvHistoryRecords.RowTemplate.Height = 24;
-            this.dgvHistoryRecords.Size = new System.Drawing.Size(1153, 336);
+            this.dgvHistoryRecords.Size = new System.Drawing.Size(1435, 575);
             this.dgvHistoryRecords.TabIndex = 8;
             // 
             // btnReturnToMenu
             // 
-            this.btnReturnToMenu.Location = new System.Drawing.Point(13, 620);
+            this.btnReturnToMenu.Location = new System.Drawing.Point(49, 665);
             this.btnReturnToMenu.Name = "btnReturnToMenu";
             this.btnReturnToMenu.Size = new System.Drawing.Size(135, 41);
             this.btnReturnToMenu.TabIndex = 9;
@@ -121,39 +86,46 @@
             this.btnReturnToMenu.UseVisualStyleBackColor = true;
             this.btnReturnToMenu.Click += new System.EventHandler(this.btnReturnToMenu_Click);
             // 
-            // cmbFilterBySection
+            // cmbSelectEvent
             // 
-            this.cmbFilterBySection.FormattingEnabled = true;
-            this.cmbFilterBySection.Location = new System.Drawing.Point(864, 90);
-            this.cmbFilterBySection.Name = "cmbFilterBySection";
-            this.cmbFilterBySection.Size = new System.Drawing.Size(214, 24);
-            this.cmbFilterBySection.TabIndex = 11;
+            this.cmbSelectEvent.FormattingEnabled = true;
+            this.cmbSelectEvent.Location = new System.Drawing.Point(49, 54);
+            this.cmbSelectEvent.Name = "cmbSelectEvent";
+            this.cmbSelectEvent.Size = new System.Drawing.Size(214, 24);
+            this.cmbSelectEvent.TabIndex = 11;
             // 
-            // label1
+            // A
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(861, 71);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(105, 16);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "Filter by Section:";
+            this.A.AutoSize = true;
+            this.A.Location = new System.Drawing.Point(46, 35);
+            this.A.Name = "A";
+            this.A.Size = new System.Drawing.Size(82, 16);
+            this.A.TabIndex = 10;
+            this.A.Text = "Select Event";
+            // 
+            // lblParticipated
+            // 
+            this.lblParticipated.AutoSize = true;
+            this.lblParticipated.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblParticipated.Location = new System.Drawing.Point(1278, 662);
+            this.lblParticipated.Name = "lblParticipated";
+            this.lblParticipated.Size = new System.Drawing.Size(166, 31);
+            this.lblParticipated.TabIndex = 13;
+            this.lblParticipated.Text = "Participated:";
             // 
             // HistoryMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
-            this.Controls.Add(this.cmbFilterBySection);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1585, 862);
+            this.Controls.Add(this.lblParticipated);
+            this.Controls.Add(this.cmbSelectEvent);
+            this.Controls.Add(this.A);
             this.Controls.Add(this.btnReturnToMenu);
             this.Controls.Add(this.dgvHistoryRecords);
             this.Controls.Add(this.btnSearch);
-            this.Controls.Add(this.cmbFilterByCourse);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.cmbFilterByEvent);
+            this.Controls.Add(this.cmbSelectSection);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtSearchByStudent);
-            this.Controls.Add(this.label2);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.Name = "HistoryMonitorForm";
@@ -167,16 +139,13 @@
         }
 
         #endregion
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txtSearchByStudent;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox cmbFilterByEvent;
-        private System.Windows.Forms.ComboBox cmbFilterByCourse;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox cmbSelectSection;
         private System.Windows.Forms.Button btnSearch;
         private System.Windows.Forms.DataGridView dgvHistoryRecords;
         private System.Windows.Forms.Button btnReturnToMenu;
-        private System.Windows.Forms.ComboBox cmbFilterBySection;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.ComboBox cmbSelectEvent;
+        private System.Windows.Forms.Label A;
+        private System.Windows.Forms.Label lblParticipated;
     }
 }
