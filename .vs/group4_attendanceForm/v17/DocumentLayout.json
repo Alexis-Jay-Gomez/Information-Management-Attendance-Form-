@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\historymonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\historymonitorform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|c:\\users\\foste\\onedrive\\documents\\github\\information-management-attendance-form-\\group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F769FE1F-49CF-4386-9EB6-FB727E78761A}|group4_attendanceForm\\group4_attendanceForm.csproj|solutionrelative:group4_attendanceform\\manageeventform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,18 +18,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HistoryMonitorForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\HistoryMonitorForm.cs",
-              "RelativeDocumentMoniker": "group4_attendanceForm\\HistoryMonitorForm.cs",
-              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\HistoryMonitorForm.cs [Design]",
-              "RelativeToolTip": "group4_attendanceForm\\HistoryMonitorForm.cs [Design]",
+              "DocumentIndex": 1,
+              "Title": "ManageEventForm.cs",
+              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs",
+              "RelativeDocumentMoniker": "group4_attendanceForm\\ManageEventForm.cs",
+              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs",
+              "RelativeToolTip": "group4_attendanceForm\\ManageEventForm.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-05-28T04:49:11.439Z",
+              "WhenOpened": "2026-05-28T06:03:47.262Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ManageEventForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs",
+              "RelativeDocumentMoniker": "group4_attendanceForm\\ManageEventForm.cs",
+              "ToolTip": "C:\\Users\\foste\\OneDrive\\Documents\\GitHub\\Information-Management-Attendance-Form-\\group4_attendanceForm\\ManageEventForm.cs [Design]",
+              "RelativeToolTip": "group4_attendanceForm\\ManageEventForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-05-28T05:58:53.232Z",
               "EditorCaption": " [Design]"
             }
           ]

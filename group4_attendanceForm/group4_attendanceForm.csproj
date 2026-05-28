@@ -184,6 +184,9 @@
     <EmbeddedResource Include="HistoryMonitorForm.resx">
       <DependentUpon>HistoryMonitorForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ManageEventForm.resx">
+      <DependentUpon>ManageEventForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ManageStudentAttendanceForm.resx">
       <DependentUpon>ManageStudentAttendanceForm.cs</DependentUpon>
     </EmbeddedResource>

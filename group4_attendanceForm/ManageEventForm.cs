@@ -42,6 +42,11 @@ namespace group4_attendanceForm
         {
 
         }
+
+        private void ManageEventForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
