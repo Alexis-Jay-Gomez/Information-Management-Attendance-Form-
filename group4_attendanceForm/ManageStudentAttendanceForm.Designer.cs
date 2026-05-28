@@ -35,7 +35,7 @@
             this.label3 = new System.Windows.Forms.Label();
             this.txtStudentId = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.txtStudentName = new System.Windows.Forms.TextBox();
+            this.txtLastName = new System.Windows.Forms.TextBox();
             this.cmbSection = new System.Windows.Forms.ComboBox();
             this.cmbCourse = new System.Windows.Forms.ComboBox();
             this.label5 = new System.Windows.Forms.Label();
@@ -48,6 +48,10 @@
             this.btnRefresh = new System.Windows.Forms.Button();
             this.btnClearLogs = new System.Windows.Forms.Button();
             this.btnMainMenu = new System.Windows.Forms.Button();
+            this.txtFirstName = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.txtMiddleName = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSubmits)).BeginInit();
             this.SuspendLayout();
             // 
@@ -110,16 +114,16 @@
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(56, 204);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 24);
+            this.label4.Size = new System.Drawing.Size(124, 30);
             this.label4.TabIndex = 6;
-            this.label4.Text = "Student Name";
+            this.label4.Text = "Last Name";
             // 
-            // txtStudentName
+            // txtLastName
             // 
-            this.txtStudentName.Location = new System.Drawing.Point(57, 231);
-            this.txtStudentName.Name = "txtStudentName";
-            this.txtStudentName.Size = new System.Drawing.Size(274, 22);
-            this.txtStudentName.TabIndex = 7;
+            this.txtLastName.Location = new System.Drawing.Point(57, 231);
+            this.txtLastName.Name = "txtLastName";
+            this.txtLastName.Size = new System.Drawing.Size(143, 22);
+            this.txtLastName.TabIndex = 7;
             // 
             // cmbSection
             // 
@@ -203,16 +207,16 @@
             // dgvRecentSubmits
             // 
             this.dgvRecentSubmits.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvRecentSubmits.Location = new System.Drawing.Point(588, 117);
+            this.dgvRecentSubmits.Location = new System.Drawing.Point(552, 117);
             this.dgvRecentSubmits.Name = "dgvRecentSubmits";
             this.dgvRecentSubmits.RowHeadersWidth = 51;
             this.dgvRecentSubmits.RowTemplate.Height = 24;
-            this.dgvRecentSubmits.Size = new System.Drawing.Size(662, 379);
+            this.dgvRecentSubmits.Size = new System.Drawing.Size(698, 379);
             this.dgvRecentSubmits.TabIndex = 20;
             // 
             // btnRefresh
             // 
-            this.btnRefresh.Location = new System.Drawing.Point(588, 502);
+            this.btnRefresh.Location = new System.Drawing.Point(552, 502);
             this.btnRefresh.Name = "btnRefresh";
             this.btnRefresh.Size = new System.Drawing.Size(166, 39);
             this.btnRefresh.TabIndex = 21;
@@ -221,7 +225,7 @@
             // 
             // btnClearLogs
             // 
-            this.btnClearLogs.Location = new System.Drawing.Point(760, 502);
+            this.btnClearLogs.Location = new System.Drawing.Point(724, 502);
             this.btnClearLogs.Name = "btnClearLogs";
             this.btnClearLogs.Size = new System.Drawing.Size(166, 39);
             this.btnClearLogs.TabIndex = 22;
@@ -238,11 +242,49 @@
             this.btnMainMenu.UseVisualStyleBackColor = true;
             this.btnMainMenu.Click += new System.EventHandler(this.btnMainMenu_Click);
             // 
+            // txtFirstName
+            // 
+            this.txtFirstName.Location = new System.Drawing.Point(203, 231);
+            this.txtFirstName.Name = "txtFirstName";
+            this.txtFirstName.Size = new System.Drawing.Size(168, 22);
+            this.txtFirstName.TabIndex = 25;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.Location = new System.Drawing.Point(202, 204);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(126, 30);
+            this.label8.TabIndex = 24;
+            this.label8.Text = "First Name";
+            // 
+            // txtMiddleName
+            // 
+            this.txtMiddleName.Location = new System.Drawing.Point(378, 231);
+            this.txtMiddleName.Name = "txtMiddleName";
+            this.txtMiddleName.Size = new System.Drawing.Size(168, 22);
+            this.txtMiddleName.TabIndex = 27;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label9.Location = new System.Drawing.Point(377, 204);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(141, 30);
+            this.label9.TabIndex = 26;
+            this.label9.Text = "Middle Initial";
+            // 
             // ManageStudentAttendanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1262, 673);
+            this.ClientSize = new System.Drawing.Size(1009, 538);
+            this.Controls.Add(this.txtMiddleName);
+            this.Controls.Add(this.label9);
+            this.Controls.Add(this.txtFirstName);
+            this.Controls.Add(this.label8);
             this.Controls.Add(this.btnMainMenu);
             this.Controls.Add(this.btnClearLogs);
             this.Controls.Add(this.btnRefresh);
@@ -255,7 +297,7 @@
             this.Controls.Add(this.cmbCourse);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtStudentName);
+            this.Controls.Add(this.txtLastName);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.txtStudentId);
             this.Controls.Add(this.label3);
@@ -284,7 +326,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txtStudentId;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox txtStudentName;
+        private System.Windows.Forms.TextBox txtLastName;
         private System.Windows.Forms.ComboBox cmbSection;
         private System.Windows.Forms.ComboBox cmbCourse;
         private System.Windows.Forms.Label label5;
@@ -297,5 +339,9 @@
         private System.Windows.Forms.Button btnRefresh;
         private System.Windows.Forms.Button btnClearLogs;
         private System.Windows.Forms.Button btnMainMenu;
+        private System.Windows.Forms.TextBox txtFirstName;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox txtMiddleName;
+        private System.Windows.Forms.Label label9;
     }
 }
