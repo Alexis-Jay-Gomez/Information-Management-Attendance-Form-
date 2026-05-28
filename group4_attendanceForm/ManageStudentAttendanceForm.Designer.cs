@@ -50,8 +50,6 @@
             this.btnMainMenu = new System.Windows.Forms.Button();
             this.txtFirstName = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtMiddleName = new System.Windows.Forms.TextBox();
-            this.label9 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRecentSubmits)).BeginInit();
             this.SuspendLayout();
             // 
@@ -203,6 +201,7 @@
             this.btnSubmitAttendance.TabIndex = 18;
             this.btnSubmitAttendance.Text = "SUBMIT ATTENDANCE";
             this.btnSubmitAttendance.UseVisualStyleBackColor = true;
+            this.btnSubmitAttendance.Click += new System.EventHandler(this.btnSubmitAttendance_Click);
             // 
             // dgvRecentSubmits
             // 
@@ -259,30 +258,11 @@
             this.label8.TabIndex = 24;
             this.label8.Text = "First Name";
             // 
-            // txtMiddleName
-            // 
-            this.txtMiddleName.Location = new System.Drawing.Point(378, 231);
-            this.txtMiddleName.Name = "txtMiddleName";
-            this.txtMiddleName.Size = new System.Drawing.Size(168, 22);
-            this.txtMiddleName.TabIndex = 27;
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(377, 204);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(113, 24);
-            this.label9.TabIndex = 26;
-            this.label9.Text = "Middle Initial";
-            // 
             // ManageStudentAttendanceForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 682);
-            this.Controls.Add(this.txtMiddleName);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.txtFirstName);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.btnMainMenu);
@@ -341,7 +321,5 @@
         private System.Windows.Forms.Button btnMainMenu;
         private System.Windows.Forms.TextBox txtFirstName;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtMiddleName;
-        private System.Windows.Forms.Label label9;
     }
 }
