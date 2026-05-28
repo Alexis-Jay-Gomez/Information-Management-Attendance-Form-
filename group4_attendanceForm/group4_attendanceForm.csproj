@@ -178,9 +178,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="EventRegistrationForm.resx">
-      <DependentUpon>ManageEventForm.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="HistoryMonitorForm.resx">
       <DependentUpon>HistoryMonitorForm.cs</DependentUpon>
     </EmbeddedResource>
