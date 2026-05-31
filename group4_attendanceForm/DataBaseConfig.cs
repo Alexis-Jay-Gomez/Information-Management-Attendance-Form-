@@ -13,7 +13,7 @@ namespace group4_attendanceForm
         public static readonly string ConnectionString = @"Server=MSI\SQLEXPRESS02;Database=AttendanceDB;Trusted_Connection=True;TrustServerCertificate=True;";
 
         /// <summary>
-        /// Returns an unopened SQL connection using our centralized connection string.
+        ///
         /// </summary>
         public static SqlConnection GetConnection()
         {

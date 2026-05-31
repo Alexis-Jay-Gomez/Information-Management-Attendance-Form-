@@ -73,12 +73,12 @@
             this.dgvHistoryRecords.Name = "dgvHistoryRecords";
             this.dgvHistoryRecords.RowHeadersWidth = 51;
             this.dgvHistoryRecords.RowTemplate.Height = 24;
-            this.dgvHistoryRecords.Size = new System.Drawing.Size(1435, 575);
+            this.dgvHistoryRecords.Size = new System.Drawing.Size(1435, 648);
             this.dgvHistoryRecords.TabIndex = 8;
             // 
             // btnReturnToMenu
             // 
-            this.btnReturnToMenu.Location = new System.Drawing.Point(49, 665);
+            this.btnReturnToMenu.Location = new System.Drawing.Point(49, 736);
             this.btnReturnToMenu.Name = "btnReturnToMenu";
             this.btnReturnToMenu.Size = new System.Drawing.Size(135, 41);
             this.btnReturnToMenu.TabIndex = 9;
@@ -107,7 +107,7 @@
             // 
             this.lblParticipated.AutoSize = true;
             this.lblParticipated.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblParticipated.Location = new System.Drawing.Point(1278, 662);
+            this.lblParticipated.Location = new System.Drawing.Point(1275, 736);
             this.lblParticipated.Name = "lblParticipated";
             this.lblParticipated.Size = new System.Drawing.Size(166, 31);
             this.lblParticipated.TabIndex = 13;
@@ -126,7 +126,7 @@
             this.Controls.Add(this.btnSearch);
             this.Controls.Add(this.cmbSelectSection);
             this.Controls.Add(this.label3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.MaximizeBox = false;
             this.Name = "HistoryMonitorForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -225,5 +225,10 @@ namespace group4_attendanceForm
 
             dgv.ClearSelection();
         }
+
+        private void ManageStudentAttendanceForm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+
+        }
     }
 }

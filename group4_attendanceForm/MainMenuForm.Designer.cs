@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenuForm));
             this.label1 = new System.Windows.Forms.Label();
             this.labelTitle = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -35,6 +36,11 @@
             this.btnEventRegistration = new System.Windows.Forms.Button();
             this.btnAttendanceMonitor = new System.Windows.Forms.Button();
             this.btnExit = new System.Windows.Forms.Button();
+            this.btnLoadDemoData = new System.Windows.Forms.Button();
+            this.btnClearEventLogs = new System.Windows.Forms.Button();
+            this.btnReset = new System.Windows.Forms.Button();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,11 +55,12 @@
             // 
             this.labelTitle.AutoSize = true;
             this.labelTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelTitle.Location = new System.Drawing.Point(341, 61);
+            this.labelTitle.Location = new System.Drawing.Point(12, 647);
             this.labelTitle.Name = "labelTitle";
-            this.labelTitle.Size = new System.Drawing.Size(538, 31);
+            this.labelTitle.Size = new System.Drawing.Size(23, 31);
             this.labelTitle.TabIndex = 1;
-            this.labelTitle.Text = "STUDENT ATTENDANCE MANAGEMENT";
+            this.labelTitle.Text = "-";
+            this.labelTitle.Click += new System.EventHandler(this.labelTitle_Click);
             // 
             // label3
             // 
@@ -66,7 +73,8 @@
             // 
             // btnManageStudents
             // 
-            this.btnManageStudents.Location = new System.Drawing.Point(321, 155);
+            this.btnManageStudents.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnManageStudents.Location = new System.Drawing.Point(364, 282);
             this.btnManageStudents.Name = "btnManageStudents";
             this.btnManageStudents.Size = new System.Drawing.Size(600, 85);
             this.btnManageStudents.TabIndex = 3;
@@ -76,39 +84,85 @@
             // 
             // btnEventRegistration
             // 
-            this.btnEventRegistration.Location = new System.Drawing.Point(321, 275);
+            this.btnEventRegistration.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventRegistration.Location = new System.Drawing.Point(364, 393);
             this.btnEventRegistration.Name = "btnEventRegistration";
             this.btnEventRegistration.Size = new System.Drawing.Size(600, 85);
             this.btnEventRegistration.TabIndex = 4;
-            this.btnEventRegistration.Text = "Manage Event";
+            this.btnEventRegistration.Text = "Set Up Event";
             this.btnEventRegistration.UseVisualStyleBackColor = true;
             this.btnEventRegistration.Click += new System.EventHandler(this.btnEventRegistration_Click);
             // 
             // btnAttendanceMonitor
             // 
-            this.btnAttendanceMonitor.Location = new System.Drawing.Point(321, 402);
+            this.btnAttendanceMonitor.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAttendanceMonitor.Location = new System.Drawing.Point(364, 498);
             this.btnAttendanceMonitor.Name = "btnAttendanceMonitor";
             this.btnAttendanceMonitor.Size = new System.Drawing.Size(600, 85);
             this.btnAttendanceMonitor.TabIndex = 5;
-            this.btnAttendanceMonitor.Text = "History Monitor";
+            this.btnAttendanceMonitor.Text = "History Logs";
             this.btnAttendanceMonitor.UseVisualStyleBackColor = true;
             this.btnAttendanceMonitor.Click += new System.EventHandler(this.btnAttendanceMonitor_Click);
             // 
             // btnExit
             // 
-            this.btnExit.Location = new System.Drawing.Point(1141, 620);
+            this.btnExit.Location = new System.Drawing.Point(1111, 647);
             this.btnExit.Name = "btnExit";
-            this.btnExit.Size = new System.Drawing.Size(109, 41);
+            this.btnExit.Size = new System.Drawing.Size(135, 23);
             this.btnExit.TabIndex = 6;
             this.btnExit.Text = "EXIT APP";
             this.btnExit.UseVisualStyleBackColor = true;
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            // 
+            // btnLoadDemoData
+            // 
+            this.btnLoadDemoData.Location = new System.Drawing.Point(667, 647);
+            this.btnLoadDemoData.Name = "btnLoadDemoData";
+            this.btnLoadDemoData.Size = new System.Drawing.Size(133, 23);
+            this.btnLoadDemoData.TabIndex = 7;
+            this.btnLoadDemoData.Text = "Run Demo Set up";
+            this.btnLoadDemoData.UseVisualStyleBackColor = true;
+            this.btnLoadDemoData.Click += new System.EventHandler(this.btnLoadDemoData_Click);
+            // 
+            // btnClearEventLogs
+            // 
+            this.btnClearEventLogs.Location = new System.Drawing.Point(807, 647);
+            this.btnClearEventLogs.Name = "btnClearEventLogs";
+            this.btnClearEventLogs.Size = new System.Drawing.Size(156, 23);
+            this.btnClearEventLogs.TabIndex = 8;
+            this.btnClearEventLogs.Text = "Clear Event Logs";
+            this.btnClearEventLogs.UseVisualStyleBackColor = true;
+            this.btnClearEventLogs.Click += new System.EventHandler(this.btnClearEventLogs_Click);
+            // 
+            // btnReset
+            // 
+            this.btnReset.Location = new System.Drawing.Point(970, 647);
+            this.btnReset.Name = "btnReset";
+            this.btnReset.Size = new System.Drawing.Size(135, 23);
+            this.btnReset.TabIndex = 9;
+            this.btnReset.Text = "Reset";
+            this.btnReset.UseVisualStyleBackColor = true;
+            this.btnReset.Click += new System.EventHandler(this.btnReset_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(313, 3);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(705, 257);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 10;
+            this.pictureBox1.TabStop = false;
             // 
             // MainMenuForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1265, 682);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.btnReset);
+            this.Controls.Add(this.btnClearEventLogs);
+            this.Controls.Add(this.btnLoadDemoData);
             this.Controls.Add(this.btnExit);
             this.Controls.Add(this.btnAttendanceMonitor);
             this.Controls.Add(this.btnEventRegistration);
@@ -122,6 +176,7 @@
             this.Text = "Attendance And Management System v1.0";
             this.Load += new System.EventHandler(this.MainMenuForm_Load);
             this.Resize += new System.EventHandler(this.MainMenuForm_Resize);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -136,5 +191,9 @@
         private System.Windows.Forms.Button btnEventRegistration;
         private System.Windows.Forms.Button btnAttendanceMonitor;
         private System.Windows.Forms.Button btnExit;
+        private System.Windows.Forms.Button btnLoadDemoData;
+        private System.Windows.Forms.Button btnClearEventLogs;
+        private System.Windows.Forms.Button btnReset;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
